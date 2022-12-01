@@ -5,13 +5,17 @@
         Doing Fingerprinting
     </div>
   </body>
-  <script src = "../../node_modules/@fingerprintjs/fingerprintjs/dist/fp.js" > </script>
+  <!-- <script src = "../../node_modules/@fingerprintjs/fingerprintjs/dist/fp.js" > </script> -->
   <script>
-    const fpPromise = FingerprintJS.load();
-      fpPromise
-    .then(fp => fp.get())
-    .then(result => {
-        console.log(result);
-    })
+    async function f() {
+        let FingerprintJS = await import("../../node_modules/@fingerprintjs/fingerprintjs/dist/fp.js");
+        const fpPromise = FingerprintJS.load();
+        fpPromise
+        .then(fp => fp.get())
+        .then(result => {
+            console.log(result);
+        })
+    }
+    f();
   </script>
 </html>
