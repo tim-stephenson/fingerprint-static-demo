@@ -5,7 +5,13 @@
         Doing Fingerprinting
     </div>
   </body>
+  <script src = "../../node_modules/@fingerprintjs/fingerprintjs/dist/fp.js" > </script>
   <script>
-    console.log("hi");
+    const fpPromise = FingerprintJS.load();
+      fpPromise
+    .then(fp => fp.get())
+    .then(result => {
+        console.log(result);
+    })
   </script>
 </html>
