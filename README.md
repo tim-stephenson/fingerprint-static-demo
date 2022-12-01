@@ -7,6 +7,7 @@
 ## Deploying
 
 Used [Vercel](https://vercel.com/) with a Build & Development Setting of
+
 ```text
 Build Command : npm run prod-build
 OutputDirectory : .
