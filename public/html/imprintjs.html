@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <div id="root">
+        Doing Fingerprinting
+    </div>
+  </body>
+  <script src = "../../dist/node_modules/imprintjs/dist/imprint.js" > </script>
+  <script>
+      var browserTests = [
+      "audio",
+      "availableScreenResolution",
+      "canvas",
+      "colorDepth",
+      "cookies",
+      "cpuClass",
+      "deviceDpi",
+      "doNotTrack",
+      "indexedDb",
+      "installedFonts",
+      "language",
+      // "localIp",
+      "localStorage",
+      "pixelRatio",
+      "platform",
+      "plugins",
+      "processorCores",
+      "screenResolution",
+      "sessionStorage",
+      "timezoneOffset",
+      "touchSupport",
+      "userAgent",
+      "webGl",
+    ];
+
+    imprint.test(browserTests).then(function (val) {
+      console.log("FINGERPRINT",val);
+    });
+  </script>
+</html>

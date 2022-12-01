@@ -23,7 +23,5 @@
     "clientjs": "0.2.1",
     "imprintjs": "1.0.0"
   },
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
-  }
+  "devDependencies": { }
 }
