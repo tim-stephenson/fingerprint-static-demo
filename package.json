@@ -5,8 +5,8 @@
   "main": "public/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "custom-install": "npm ci --omit=dev && ls",
-    "custom-build" : "cp -R /node_modules /static"
+    "custom-install": "npm ci --omit=dev && ls && cp -R ./node_modules ./static",
+    "custom-build": "ls"
   },
   "repository": {
     "type": "git",
