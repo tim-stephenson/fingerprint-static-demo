@@ -5,10 +5,9 @@
         Doing Fingerprinting
     </div>
   </body>
-  <!-- <script src = "../../node_modules/@fingerprintjs/fingerprintjs/dist/fp.js" > </script> -->
+  <script src = "../../dist/node_modules/@fingerprintjs/fingerprintjs/dist/fp.js" > </script>
   <script>
     async function f() {
-        let FingerprintJS = await import("../../node_modules/@fingerprintjs/fingerprintjs/dist/fp.js");
         const fpPromise = FingerprintJS.load();
         fpPromise
         .then(fp => fp.get())
